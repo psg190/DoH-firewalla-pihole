@@ -12,10 +12,10 @@ if [ ! -d "$path2" ]; then
 fi
 
 if [ "$1" = "doh" ] ; then
-	curl https://raw.githubusercontent.com/mbierman/pihole-installer-for-Firewalla/main/DoH_docker-compose.yaml > $path2/docker-compose.yaml
+	curl https://raw.githubusercontent.com/psg190/DoH-firewalla-pihole/main/DoH_docker-compose.yaml > $path2/docker-compose.yaml
 
 else
-	curl https://raw.githubusercontent.com/mbierman/pihole-installer-for-Firewalla/main/docker-compose.yaml > $path2/docker-compose.yaml
+	curl https://raw.githubusercontent.com/psg190/DoH-firewalla-pihole/main/docker-compose.yaml > $path2/docker-compose.yaml
 fi
  
 cd $path2
